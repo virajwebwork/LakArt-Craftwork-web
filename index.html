@@ -8,20 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Add these rules at the top of your styles */
-:host,
-html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    background-color: #bad2b0; /* Light beige background */
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #bad2b0; /* Light beige background */
+        }
 
         .nature-gradient {
             background: linear-gradient(to right, rgba(76, 175, 80, 0.8), rgba(139, 195, 74, 0.8));
@@ -40,7 +33,6 @@ body {
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
     </style>
-    <base href="https://virajwebwork.github.io/LakArt-Craftwork-web/">
 </head>
 <body>
     <div x-data="{navOpen: false, modalOpen: false, currentImage: '', galleryActive: false}">
@@ -48,7 +40,7 @@ body {
             <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center space-x-3">
                     <div class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
-                        <img src="/photo/logo.jpg" alt="Lak Art Logo" class="w-full h-full object-contain">
+                        <img src="photo/LOGO.jpg" alt="Lak Art Logo" class="w-full h-full object-contain">
                     </div>
                     <span class="text-xl md:text-2xl font-bold text-green-800">Lak Art</span>
                 </div>
@@ -97,7 +89,7 @@ body {
 
                 <div class="flex flex-col md:flex-row justify-center items-center">
                     <div class="md:w-1/3 mb-4 md:mb-0 mr-4">
-                        <img src="/photo/pic1.jpg" alt="Lakshan with Wooden Art photo" class="rounded-lg shadow-lg w-full h-auto object-cover" style="max-width: 920px; max-height: 920px;">
+                        <img src="photo/pic1.jpg" alt="Description of the left picture" class="rounded-lg shadow-lg w-full h-auto object-cover" style="max-width: 920px; max-height: 920px;">
                     </div>
 
                     <div class="text-center">
@@ -106,7 +98,7 @@ body {
                     </div>
 
                     <div class="md:w-1/3 mb-4 md:mb-0 ml-4">
-                        <img src="/photo/pic2.jpg" alt="Lakshan in his Stole with woodern ,craft product" class="rounded-lg shadow-lg w-full h-auto object-cover" style="max-width: 720px; max-height: 820px;">
+                        <img src="photo/pic2.jpg" alt="Description of the right picture" class="rounded-lg shadow-lg w-full h-auto object-cover" style="max-width: 720px; max-height: 820px;">
                     </div>
                 </div>
 
@@ -147,18 +139,18 @@ body {
         
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                        <img src="/photo/tigers/tiger.jpg" alt="Wildlife Wood Art - Tiger"
+                        <img src="photo/tigers/tiger.jpg" alt="Wildlife Wood Art - Tiger"
                              class="w-full h-64 object-cover gallery-img cursor-pointer"
-                             onclick="openModal('/photo/tigers/tiger.jpg', 0)">
+                             onclick="openModal('photo/tigers/tiger.jpg', 0)">
         
                         <div class="flex overflow-x-auto p-2 gap-2">
-                            <img src="/photo/tigers/tiger.jpg" alt="Tiger 1" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
+                            <img src="photo/tigers/tiger.jpg" alt="Tiger 1" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
                                  onclick="openModal('photo/tigers/tiger.jpg', 1)">
-                            <img src="/photo/tigers/tiger1.jpg" alt="Tiger 1" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
+                            <img src="photo/tigers/tiger1.jpg" alt="Tiger 1" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
                                  onclick="openModal('photo/tigers/tiger1.jpg', 1)">
-                            <img src="/photo/tigers/tiger2.jpg" alt="Tiger 2" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
+                            <img src="photo/tigers/tiger2.jpg" alt="Tiger 2" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
                                  onclick="openModal('photo/tigers/tiger2.jpg', 2)">
-                            <img src="/photo/tigers/tiger3.jpg" alt="Tiger 3" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
+                            <img src="photo/tigers/tiger3.jpg" alt="Tiger 3" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
                                  onclick="openModal('photo/tigers/tiger3.jpg', 3)">
                         </div>
         
@@ -169,13 +161,13 @@ body {
                     </div>
         
                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                        <img src="/photo/ele/ele1.jpg" alt="Elephant Wood Art"
+                        <img src="photo/ele/ele1.jpg" alt="Elephant Wood Art"
                              class="w-full h-64 object-cover gallery-img cursor-pointer"
-                             onclick="openModal('/photo/ele/ele1.jpg', 0)">
+                             onclick="openModal('photo/ele/ele1.jpg', 0)">
         
                         <div class="flex overflow-x-auto p-2 gap-2">
-                            <img src="/photo/ele/ele1.jpg" alt="Elephant Family" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
-                                 onclick="openModal('/photo/ele/ele1.jpg', 1)">
+                            <img src="photo/ele/ele1.jpg" alt="Elephant Family" class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition"
+                                 onclick="openModal('photo/ele/ele1.jpg', 1)">
                         </div>
         
                         <div class="p-4">
@@ -190,27 +182,27 @@ body {
                             <p class="text-gray-600 text-sm mb-3">Handcrafted Wooden Burning Frame with Keychains/ Key keyTags</p>
         
                             <div class="mb-3">
-                                <img src="/photo/key/key1.jpg" alt="Wood Art Key Chain"
+                                <img src="photo/key/key1.jpg" alt="Wood Art Key Chain"
                                      class="w-full h-64 object-cover gallery-img cursor-pointer rounded-md"
-                                     onclick="openModal('/photo/key/key1.jpg', 0)">
+                                     onclick="openModal('photo/key/key1.jpg', 0)">
                             </div>
         
                             <div class="flex overflow-x-auto gap-2 pb-2">
-                                <img src="/photo/key/key1.jpg" alt="Key Tags 1"
+                                <img src="photo/key/key1.jpg" alt="Key Tags 1"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/key/key1.jpg', 0)">
-                                <img src="/photo/key/key2.jpg" alt="Key Tags 2"
+                                     onclick="openModal('photo/key/key1.jpg', 0)">
+                                <img src="photo/key/key2.jpg" alt="Key Tags 2"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/key/key2.jpg', 1)">
-                                <img src="/photo/key/key3.jpg" alt="Key Tags 3"
+                                     onclick="openModal('photo/key/key2.jpg', 1)">
+                                <img src="photo/key/key3.jpg" alt="Key Tags 3"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/key/key3.jpg', 2)">
-                                <img src="/photo/key/key4.jpg" alt="Key Tags 4"
+                                     onclick="openModal('photo/key/key3.jpg', 2)">
+                                <img src="photo/key/key4.jpg" alt="Key Tags 4"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/key/key4.jpg', 3)">
-                                <img src="/photo/key/key5.jpg" alt="Key Tags 5"
+                                     onclick="openModal('photo/key/key4.jpg', 3)">
+                                <img src="photo/key/key5.jpg" alt="Key Tags 5"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/key/key5.jpg', 4)">
+                                     onclick="openModal('photo/key/key5.jpg', 4)">
                             </div>
                         </div>
                     </div>
@@ -221,21 +213,21 @@ body {
                             <p class="text-gray-600 text-sm mb-3">Handcrafted Wooden Photo Frames with Engraved Portraits</p>
         
                             <div class="mb-3">
-                                <img src="/photo/per/per1.jpg" alt="Wood Art Photo Frames"
+                                <img src="photo/per/per1.jpg" alt="Wood Art Photo Frames"
                                      class="w-full h-64 object-cover gallery-img cursor-pointer rounded-md"
-                                     onclick="openModal('/photo/per/per1.jpg', 0)">
+                                     onclick="openModal('photo/per/per1.jpg', 0)">
                             </div>
         
                             <div class="flex overflow-x-auto gap-2 pb-2">
-                                <img src="/photo/per/per1.jpg" alt="Photo 1"
+                                <img src="photo/per/per1.jpg" alt="Photo 1"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/per/per1.jpg', 0)">
-                                <img src="/photo/per/per2.jpg" alt="Photo 2"
+                                     onclick="openModal('photo/per/per1.jpg', 0)">
+                                <img src="photo/per/per2.jpg" alt="Photo 2"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/per/per2.jpg', 1)">
-                                <img src="/photo/per/per3.jpg" alt="Photo 3"
+                                     onclick="openModal('photo/per/per2.jpg', 1)">
+                                <img src="photo/per/per3.jpg" alt="Photo 3"
                                      class="h-16 w-16 object-cover cursor-pointer hover:opacity-80 transition rounded"
-                                     onclick="openModal('/photo/per/per3.jpg', 2)">
+                                     onclick="openModal('photo/per/per3.jpg', 2)">
                             </div>
                         </div>
                     </div>
@@ -468,7 +460,7 @@ body {
             <div class="container mx-auto px-4 text-center">
                 <div class="flex justify-center items-center space-x-2 mb-4">
                     <div class="w-10 h-10 flex items-center justify-center">
-                        <img src="/photo/logo.jpg" alt="Lak Art Logo" class="w-full h-full object-contain">
+                        <img src="photo/LOGO.jpg" alt="Lak Art Logo" class="w-full h-full object-contain">
                     </div>
                     <span class="text-lg font-bold">Lak Art</span>
                 </div>
@@ -506,22 +498,22 @@ body {
 <script>
     // Define gallery images
     const galleryImages = [
-        { src: '/photo/tigers/tiger.jpg', caption: 'Majestic Tiger - Collection ' },
-        { src: '/photo/tigers/tiger1.jpg', caption: 'Majestic Tiger - The scared tiger' },
-        { src: '/photo/tigers/tiger2.jpg', caption: 'Majestic Tiger - The Angry tiger' },
-        { src: '/photo/tigers/tiger3.jpg', caption: 'Majestic Tiger - The playful tiger' },
+        { src: 'photo/tigers/tiger.jpg', caption: 'Majestic Tiger - Collection ' },
+        { src: 'photo/tigers/tiger1.jpg', caption: 'Majestic Tiger - The scared tiger' },
+        { src: 'photo/tigers/tiger2.jpg', caption: 'Majestic Tiger - The Angry tiger' },
+        { src: 'photo/tigers/tiger3.jpg', caption: 'Majestic Tiger - The playful tiger' },
 // Elephant images
         { src: 'photo/ele/ele1.jpg', caption: 'Elephant family - Majestic beauty of elephants.' },
  // Key Tags images
-        { src: '/photo/key/key1.jpg', caption: 'Handcrafted Wooden Keychains  - Sri Lanka Outline' },
-        { src: '/photo/key/key2.jpg', caption: 'Handcrafted Wooden Keychains - Sri Lanka explores 1' },
-        { src: '/photo/key/key3.jpg', caption: 'Handcrafted Wooden Keychains - Sri Lanka explores 2' },
-        { src: '/photo/key/key4.jpg', caption: 'Handcrafted Wooden Necklaces - Handcrafted Wooden Plaque with Assorted Necklaces' },
-        { src: '/photo/key/key5.jpg', caption: 'Handcrafted Wooden Keychains - Handcrafted Wooden Keychains with Silhouette Designs' },
+        { src: 'photo/key/key1.jpg', caption: 'Handcrafted Wooden Keychains  - Sri Lanka Outline' },
+        { src: 'photo/key/key2.jpg', caption: 'Handcrafted Wooden Keychains - Sri Lanka explores 1' },
+        { src: 'photo/key/key3.jpg', caption: 'Handcrafted Wooden Keychains - Sri Lanka explores 2' },
+        { src: 'photo/key/key4.jpg', caption: 'Handcrafted Wooden Necklaces - Handcrafted Wooden Plaque with Assorted Necklaces' },
+        { src: 'photo/key/key5.jpg', caption: 'Handcrafted Wooden Keychains - Handcrafted Wooden Keychains with Silhouette Designs' },
     // Key Tags images
-        { src: '/photo/per/per1.jpg', caption: 'Handcrafted Wooden Photo Frames  - Crucifixion of Jesus' },
-        { src: '/photo/per/per2.jpg', caption: 'Handcrafted Wooden Photo Frames - Warm Wishes wooden frame ' },
-        { src: '/photo/per/per3.jpg', caption: 'Handcrafted Wooden Photo Frames - Wooden Photo Frames with Engraved Portraits' },
+        { src: 'photo/per/per1.jpg', caption: 'Handcrafted Wooden Photo Frames  - Crucifixion of Jesus' },
+        { src: 'photo/per/per2.jpg', caption: 'Handcrafted Wooden Photo Frames - Warm Wishes wooden frame ' },
+        { src: 'photo/per/per3.jpg', caption: 'Handcrafted Wooden Photo Frames - Wooden Photo Frames with Engraved Portraits' },
     ];
     
     let currentImageIndex = 0;
